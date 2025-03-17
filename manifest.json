@@ -1,20 +1,22 @@
 {
-    "name": "Ezau Castilho Fotografia",
-    "short_name": "Ezau Foto",
-    "start_url": "/index.html",
+    "name": "ezaufotografias",
+    "short_name": "ezaufotografias",
+    "description": "Eternize momentos e registre suas emoções com fotografia.",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#ffffff",
     "icons": [
-        {
-            "src": "assets/img/icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/img/icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
+      {
+        "src": "assets/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
     ]
-}
+  }
+  

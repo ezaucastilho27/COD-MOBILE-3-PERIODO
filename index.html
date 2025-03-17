@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>ezaufotografias</title>
+        <meta name="description" content="Registre momentos inesquecíveis com a fotografia profissional de Ezau Castilho." />
+        <meta name="author" content="Ezau Castilho Fotógrafo" />
+        <title>ezaufotografias - Fotografia Profissional</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
+        
+        <!-- Manifesto PWA -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Service Worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('Service Worker registrado!', reg))
+                    .catch(err => console.log('Erro ao registrar o Service Worker', err));
+            }
+        </script>
+
+        <!-- Font Awesome icons (free version) -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
+        
+        <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        
+        <!-- Core theme CSS (includes Bootstrap) -->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">ezaucastilhofotográfo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="#page-top" aria-label="Página inicial">Ezau Castilho Fotógrafo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">Registre-se</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Loguin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#register">Registre-se</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li> <!-- Corrigido de "Loguin" para "Login" -->
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
+
+        <!-- Header -->
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
@@ -43,29 +61,34 @@
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
         </header>
-        <!-- Content section 1-->
+
+        <!-- Content section 1 -->
         <section id="scroll">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/casamento.jpeg" alt="..." /></div>
+                        <div class="p-5">
+                            <img class="img-fluid rounded-circle" src="assets/img/casamento.jpeg" alt="Casamento com decoração elegante e feliz casal" />
+                        </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Para aqueles que estão prestes a dizer "sim"...
-                            </h2>
-                            <p>Essa imagem retrata a beleza do momento em que dois corações se unem para sempre. O cenário encantador, a felicidade no olhar e a atmosfera romântica fazem dessa foto um registro único e memorável..</p>
+                            <h2 class="display-4">Para aqueles que estão prestes a dizer "sim"...</h2>
+                            <p>Essa imagem retrata a beleza do momento em que dois corações se unem para sempre. O cenário encantador, a felicidade no olhar e a atmosfera romântica fazem dessa foto um registro único e memorável.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Content section 2-->
+
+        <!-- Content section 2 -->
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/site ezauu.jpg" alt="..." /></div>
+                        <div class="p-5">
+                            <img class="img-fluid rounded-circle" src="assets/img/site ezauu.jpg" alt="Fotografia de casamento em ambiente romântico e descontraído" />
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
@@ -76,12 +99,15 @@
                 </div>
             </div>
         </section>
-        <!-- Content section 3-->
+
+        <!-- Content section 3 -->
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/casamento na praia.jpg" alt="..." /></div>
+                        <div class="p-5">
+                            <img class="img-fluid rounded-circle" src="assets/img/casamento na praia.jpg" alt="Casamento na praia com o mar ao fundo e um abraço apaixonado" />
+                        </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
@@ -92,13 +118,24 @@
                 </div>
             </div>
         </section>
-        <!-- Footer-->
+
+        <!-- Footer -->
         <footer class="py-5 bg-black">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2023</p></div>
+            <div class="container px-5">
+                <p class="m-0 text-center text-white small">Copyright &copy; Ezau Castilho Fotografia 2023</p>
+                
+                <!-- Links de contato -->
+                <p class="text-center text-white small">
+                    <a href="mailto:ezaufelipe27@gmail.com" class="text-white" aria-label="Enviar e-mail para Ezau">E-mail: ezaufelipe27@gmail.com</a> | 
+                    <a href="tel:+5581999074801" class="text-white" aria-label="Ligar para Ezau">Telefone: +55 81 99907-4801</a> | 
+                    <a href="https://www.google.com/maps?q=Recife,PE" target="_blank" class="text-white" aria-label="Ver localização no mapa">Endereço: Recife, PE</a>
+                </p>
+            </div>
         </footer>
-        <!-- Bootstrap core JS-->
+
+        <!-- Bootstrap core JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <!-- Core theme JS -->
         <script src="js/scripts.js"></script>
     </body>
 </html>
